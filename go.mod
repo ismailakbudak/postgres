@@ -1,4 +1,4 @@
-module gorm.io/driver/postgres
+module github.com/ismailakbudak/postgres
 
 go 1.14
 

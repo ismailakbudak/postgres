@@ -43,7 +43,7 @@ func (dialector Dialector) Name() string {
 func (dialector Dialector) Initialize(db *gorm.DB) (err error) {
 	// register callbacks
 	callbacks.RegisterDefaultCallbacks(db, &callbacks.Config{
-		WithReturning: true,
+		WithReturning: false,
 	})
 
 	if dialector.Conn != nil {
